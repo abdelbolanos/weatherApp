@@ -1,0 +1,12 @@
+nginx:
+    container_name: nginx
+    build: ./nginx/
+    ports:
+        - 80:80
+    volumes_from:
+        - app
+app:
+    image: nginx:latest
+    volumes:
+        - ..:/var/www/html
+    command: "true"

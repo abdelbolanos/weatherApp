@@ -1,0 +1,17 @@
+<div class="btn-group" ng-class="{open: dropdownDisplay}">
+    <label for="city">City</label>
+    <input sf-typeahead
+           type="text" 
+           name="city" 
+           id="city" 
+           class="form-control"
+           ng-model="city"
+           ng-model-options="{ debounce: 500 }">
+    <ul class="dropdown-menu">
+        <li ng-repeat="cityObj in cities">
+            <a ng-click="selectCity(cityObj)">
+                {{cityObj.name}}, {{cityObj.country}}
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,26 @@
+<form novalidate>
+    <div class="form-group">
+        <search-city-directive city="city" on-update="getForecast5Days">
+        </search-city-directive>
+    </div>
+    <div>
+        <label for="temperature_unit">Temperature Unit</label>
+        <div ng-repeat="unit in TEMPERATURE_UNIT">
+            <label>
+                <input type="radio"
+                       name="temperature_unit" 
+                       ng-checked="checkTemperatureUnit(unit.value)"
+                       ng-click="setTemperatureUnit(unit.value)"
+                       >
+                {{unit.name}}
+            </label>
+        </div>
+    </div>
+</form>
+
+<div class="row">
+    <div ng-repeat="day in forecast5Days"
+         ng-class="($first) ? 'col-md-offset-1 col-md-2' : 'col-md-2'">
+        <forecast-resumen-directive day-value="day"></forecast-resumen-directive>
+    </div>
+</div>
