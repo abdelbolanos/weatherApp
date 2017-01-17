@@ -24,9 +24,9 @@ npm install —save-dev
 
 bower install
 
-test grunt if working
+## Test if grunt is working
 
-➜  photosite grunt --help
+➜  grunt --help
 
 if get
 
