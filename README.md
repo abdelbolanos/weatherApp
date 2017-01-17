@@ -5,22 +5,35 @@ version 0.15.1.
 
 ## Install dependencies
 Linux: 
+
 sudo apt-get install npm
+
 sudo apt-get install sass
 
 Mac: 
+
 brew install npm
+
 brew install libsass
 
 npm install -g grunt-cli yo bower generator-karma generator-angular
+
 gem install compass
+
 npm install —save-dev
+
 bower install
 
-if test
+test grunt if working
+
 ➜  photosite grunt --help
+
+if get
+
 /usr/bin/env: ‘node’: No such file or directory
-then
+
+then try this
+
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 
