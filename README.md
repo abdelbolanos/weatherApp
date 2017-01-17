@@ -4,17 +4,19 @@ This project is generated with [yo angular generator](https://github.com/yeoman/
 version 0.15.1.
 
 ## Install dependencies
-Linux: 
+###Linux: 
 
 sudo apt-get install npm
 
 sudo apt-get install sass
 
-Mac: 
+###Mac: 
 
 brew install npm
 
 brew install libsass
+
+###Now for all:
 
 npm install -g grunt-cli yo bower generator-karma generator-angular
 
